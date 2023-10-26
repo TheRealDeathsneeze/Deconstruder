@@ -1,0 +1,2 @@
+print extruder parts with standard voron print settings for strength. 0.4mm to 0.5mm nozzle reccomended.
+The ducts have several thin walled sections. I would highly advise printing with a 0.2 to 0.3mm nozzle and using a lower layer height. As a voron V0 can quite easily reach high enough chamber temperatures to make ABS and ASA get a little soft, it would be advisable to print these parts in polycarbonate for higher temperature resistance. Addittionaly, there are files for a CNC version of the nose plate and stepper frame for those that want an even more rigid setup. 
