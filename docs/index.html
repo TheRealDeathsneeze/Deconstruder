@@ -1,108 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Deconstruder</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="An alternative toolhead for the Voron V0, with v0.1 carriage and NF-Crazy hot end">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-<style>
-:root{
-    --text_color: rgb(192, 186, 178);
-    --docsify_dark_mode_bg:#131516;
-    --docsify_dark_mode_bg_main:#181a1b;
-}
-.sidebar, .sidebar-toggle{
-    background:var(--docsify_dark_mode_bg);
-    color:var(--text_color);
-}
+    <meta charset="UTF-8" />
+    <title>Deconstruder</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description"
+        content="An alternative toolhead for the Voron V0, with v0.1 carriage and NF-Crazy hot end" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <style>
+        :root {
+            --text_color: rgb(192, 186, 178);
+            --docsify_dark_mode_bg: #131516;
+            --docsify_dark_mode_bg_main: #181a1b;
+        }
 
-aside,body,html,main{
-    background:var(--docsify_dark_mode_bg_main);
-    color:var(--text_color);
-}
-input[type=checkbox]{
-    height:0;
-    width:0;
-    visibility:hidden
-}
-label{
-    cursor:pointer;
-    text-indent:-9999px;
-    width:55px;
-    height:30px;
-    background:var(--theme-color);
-    background:var(--docsify_dark_mode_btn);
-    margin:0 auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:100px;
-    position:relative
-}
-label:after{
-    content:"";
-    background:var(--docsify_dark_mode_bg);
-    width:20px;
-    height:20px;
-    border-radius:50%;
-    position:absolute;
-    top:5px;
-    left:4px;
-    transition:.32s cubic-bezier(.68,-.55,.27,1.55)
-}
-input:checked+label{
-    background:var(--theme-color);
-    background:var(--docsify_dark_mode_btn)
-}
-input:checked+label:after{
-    left:calc(100% - 5px);
-    transform:translateX(-100%)
-}
-html.transition,html.transition *,html.transition :after,html.transition :before{
-    transition:.42s cubic-bezier(.68,-.55,.27,1.55)!important;
-    transition-delay:0!important
-}
-p{
-    color:var(--text_color)
-}
-.markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section strong, .anchor span, .markdown-section a {
-    color: #8541ad
-}
-.sidebar-toggle span{background: #8541ad;}
-.sidebar ul li>a {
-    border-right: 2px solid;
-    color:#ae97bb;
-    font-weight: 600;
-}
-.sidebar ul li.active>a {
-    border-right: 2px solid;
-    color:#9c4bcb;
-    font-weight: 600;
-}
-.github-corner svg {
-    color: #fff;
-    fill: #8541ad;
-    height: 65px;
-    width: 65px;
-}
-</style>
+        .sidebar,
+        .sidebar-toggle {
+            background: var(--docsify_dark_mode_bg);
+            color: var(--text_color);
+        }
+
+        aside,
+        body,
+        html,
+        main {
+            background: var(--docsify_dark_mode_bg_main);
+            color: var(--text_color);
+        }
+
+        input[type="checkbox"] {
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+
+        label {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 55px;
+            height: 30px;
+            background: var(--theme-color);
+            background: var(--docsify_dark_mode_btn);
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            position: relative;
+        }
+
+        label:after {
+            content: "";
+            background: var(--docsify_dark_mode_bg);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 4px;
+            transition: 0.32s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        input:checked+label {
+            background: var(--theme-color);
+            background: var(--docsify_dark_mode_btn);
+        }
+
+        input:checked+label:after {
+            left: calc(100% - 5px);
+            transform: translateX(-100%);
+        }
+
+        html.transition,
+        html.transition *,
+        html.transition :after,
+        html.transition :before {
+            transition: 0.42s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+            transition-delay: 0 !important;
+        }
+
+        p {
+            color: var(--text_color);
+        }
+
+        .markdown-section h1,
+        .markdown-section h2,
+        .markdown-section h3,
+        .markdown-section h4,
+        .markdown-section strong,
+        .anchor span,
+        .markdown-section a {
+            color: #8541ad;
+        }
+
+        .sidebar-toggle span {
+            background: #8541ad;
+        }
+
+        .sidebar ul li>a {
+            border-right: 2px solid;
+            color: #ae97bb;
+            font-weight: 600;
+        }
+
+        .sidebar ul li.active>a {
+            border-right: 2px solid;
+            color: #9c4bcb;
+            font-weight: 600;
+        }
+
+        .github-corner svg {
+            color: #fff;
+            fill: #8541ad;
+            height: 65px;
+            width: 65px;
+        }
+    </style>
 </head>
-<body>
-  <div id="app"></div>
-  <script>
-     window.$docsify = {
-    	repo: 'TheRealDeathsneeze/Deconstruder',
-	name: 'Deconstruder',
-	nameLink: 'https://therealdeathsneeze.github.io/deconstruder',
-basePath: '/',
-    	maxLevel: 3,
-    	coverpage: false
-  };
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            repo: "TheRealDeathsneeze/Deconstruder",
+            name: "Deconstruder",
+            nameLink: "https://therealdeathsneeze.github.io/deconstruder",
+            basePath: "/",
+            maxLevel: 3,
+            coverpage: false,
+        };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
+
 </html>
