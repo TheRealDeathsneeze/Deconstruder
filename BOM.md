@@ -63,4 +63,6 @@ M3x5x4 heatset insert - 2
 M2x3x2 heatset insert - 2
 
 
-need to verify heatset insert sizes. M3 are standard voron size
+(need to verify heatset insert sizes.) M3 are standard voron size
+
+Optional: Vibratite VC3 or Loctite 222 thread locking compound
