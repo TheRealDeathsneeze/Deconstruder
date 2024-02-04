@@ -4,7 +4,7 @@ Deconstruder is a toolhead for the voron v0 utilizing the v0.1 carraige and NF c
 
 [Bill Of Materials](https://github.com/TheRealDeathsneeze/Deconstruder/blob/main/BOM.md)
 
-[Assembly Instructions](
+[Assembly Instructions](https://github.com/TheRealDeathsneeze/Deconstruder/blob/main/assembly_instructions.md)
 
 ![Deconstruder Types](IMAGES/Three%20Flavors.png)
 
