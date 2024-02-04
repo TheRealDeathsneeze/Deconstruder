@@ -3,7 +3,9 @@
 Deconstruder is a toolhead for the voron v0 utilizing the v0.1 carraige and NF crazy, designed around maximizing rigidity while maintaining a small footprint and low mass. No other hot ends will be supported due to some of the unique features of the NF crazy / mosquito hot end, such as the ability to use four bolts on two different planes to secure the hot end to the toolhead, and the ability to carry a 'fan net' or 'mosquito net' at the bottom of the heatsink frame, as well as the built in 2510 mounting saving a fair amount of weight and space over other options. 
 
 [Bill Of Materials](https://github.com/TheRealDeathsneeze/Deconstruder/blob/main/BOM.md)
+
 [Assembly Instructions](https://github.com/TheRealDeathsneeze/Deconstruder/blob/main/assembly_instructions.md)
+
 [Printing guide](https://github.com/TheRealDeathsneeze/Deconstruder/blob/main/STLs/PRINTING.md)
 
 ![Deconstruder Types](IMAGES/Three%20Flavors.png)
